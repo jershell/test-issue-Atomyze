@@ -2,7 +2,6 @@
 
 package com.github.templateapp.screenmodel
 
-import android.util.Log
 import cafe.adriel.voyager.core.model.ScreenModel
 import cafe.adriel.voyager.core.model.coroutineScope
 import com.github.templateapp.repository.CurrencyRepository

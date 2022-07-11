@@ -16,7 +16,7 @@ import kotlin.time.ExperimentalTime
 
 class CurrencyRepository(private val ds: IRemote) {
     private val all = mutableMapOf<String, Currency>()
-    private val _loadedAt: Date = Date().apply { time = 0 }
+    private val _loadedAt: Date = Date(0)
 
     val loadedAt: Date
         get() = _loadedAt
@@ -44,7 +44,6 @@ class CurrencyRepository(private val ds: IRemote) {
             val payload = response
                 .readText()
                 .let {
-                    // MapSerializer(String.serializer(), Currency.serializer())
                     json.decodeFromString(Currencies.serializer(), it)
                 }
 
