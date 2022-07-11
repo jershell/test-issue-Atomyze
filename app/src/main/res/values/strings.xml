@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TemplateApp</string>
+    <string name="today">Сегодня</string>
+    <string name="prev">Пред</string>
+</resources>
